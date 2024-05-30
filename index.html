@@ -2,9 +2,10 @@
 <html lang="en" data-theme="dark">
 
 <head>
+  
   <meta charset=" UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- 
     - meta tags
   -->
@@ -77,40 +78,52 @@
       <section class="section hero">
         <div class="container">
 
-          <figure class="hero-banner img-holder" style="--width: 100; --height: 100;">
+          <!-- <figure class="hero-banner img-holder" style="--width: 100; --height: 100;">
             <img src="./assets/images/profile-pic.png" width="200" height="200" alt="Martial MAYAMOU" > 
-          </figure>
+          </figure> -->
 
           <div class="
           ">
 
-            <span class="label-large section-subtitle">Etudiant / Développeur web junior </span>
+            <span class="label-large section-subtitle">Développeur web junior </span>
 
-            <h1 class="display-small">Martial MAYAMOU</h1>
+            <h1 class="display-large h1-color">Martial MAYAMOU</h1>
 
-            <p class="body-large section-text">
-              <strong>Bonjour ! bienvenue sur mon portfolio</strong><br>
-              Je porte beaucoup d'intérêt pour la créativité. Du coup je suis en quête de découvrir mon véritable métier dans le domaine de la création numérique.
+            <p class=" section-text title-large">
+              Bonjour ! Bienvenue sur mon portfolio<br>
+              <!-- Tout d'abord sachez que je porte beaucoup d'intérêt pour la créativité. Du coup je suis en quête de découvrir mon véritable métier dans le domaine de la création numérique. -->
             </p>
 
-            <!-- <div class="btn-wrapper">
+            <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn"/>
+            <label for="modal-btn" class="label">
+              Voir CV </label> 	
+              
+            <div class="modal">		
+              <div class="modal-wrap">	
+                <iframe width="100%" class="responsive-iframe"
+                height="100%"
+                frameborder="0"
+                scrolling="yes"
+                allowTransparency="true" src="./assets/docs/CV_MAYAMOU_MARTIAL_A2024.pdf" title="Iframe Example" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+                      		
+              </div>			          		
+            </div>	
+    
 
-              <a href="mailto:khalid@techgulf.com" class="chip">
-                <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
-
-                <span class="label-large">khalid@techgulf.com</span>
-
-                <div class="state-layer"></div>
-              </a>
-
-              <a href="tel:+213908539206" class="chip">
-                <span class="material-symbols-outlined" aria-hidden="true"> call </span>
-
-                <span class="label-large">+213908539206</span>
-
-                <div class="state-layer"></div>
-              </a>
-
+            <!-- <input type="checkbox" id="modal">
+            <label for="modal" class="example-label"> Voir CV</label>
+            <label for="modal" class="modal-background"></label>
+            <div class="modal">
+              <div class="modal-header">
+                
+                    <label for="modal">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC" width="16" height="16" alt="">
+                      </div>
+                      <div class="iframe-wrap"><iframe width="100%" height="100%" src="./assets/docs/CV_MAYAMOU_MARTIAL_A2024.pdf" title="Iframe Example" scrolling="no" frameborder="no" allow="fullscreen"></iframe>
+                        
+                    </label>
+                </div>
+                
             </div> -->
 
           </div>
@@ -128,33 +141,46 @@
 
         <div class="about-card">
 
-          <h2 class="card-title title-medium">A propos de moi</h2>
+          <h2 class="card-title title-large">A propos de moi</h2>
 
-          <p class="body-medium card-text">
-          Actuellement étudiant en deuxième année du BTS SIO option SLAM  au lycée professionnel Jean Jaurès d'Aubusson. <br>Grâce à mes expériences, ma curiosité et mes recherches, je possède des connaissances sur différents langages de programmation tels que PHP, JavaScript, HTML et CSS. En parallèle de mes études, je m'intéresse également au UX/UI Design et au montage vidéo...
-          </p>
+         
 
-          <ul class="about-list">
+          <ul class="about-list card-text">
 
             <li class="list-item">
-              <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
+              <span class="material-symbols-outlined">
+                person
+                </span>
 
-              <span class="label-medium">France</span>
+              <span class="label-large">Étudiant</span>
             </li>
+          
 
             <li class="list-item">
               <span class="material-symbols-outlined" aria-hidden="true">
                 school
                 </span>
 
-              <span class="label-medium">Etudiant</span>
+              <span class="label-large">2ème année de BTS SIO option SLAM</span>
             </li>
-
             <li class="list-item">
-              <span class="material-symbols-outlined" aria-hidden="true"> captive_portal </span>
+              <span class="material-symbols-outlined">
+                location_city
+                </span>
 
-              <a href="https://example.com" class="label-medium">https://example.com</a>
+              <span class="label-large">Lycée professionnel Jean Jaurès, Aubusson (23200)</span>
             </li>
+     
+            
+          
+
+          </ul>
+          <ul class="body-large about-list">
+
+            
+     
+            
+          
 
           </ul>
 
@@ -169,24 +195,24 @@
           <div class="primary-tabs">
 
             <button class="tab-btn active" data-tab-btn="project">
-              <span class="tab-text title-small">Projets</span>
+              <span class="tab-text title-large">Projets</span>
 
               <div class="state-layer"></div>
             </button>
-            <button class="tab-btn" data-tab-btn="veille">
-              <span class="tab-text title-small">veille technologique</span>
-
-              <div class="state-layer"></div>
-            </button>
+            
 
             <button class="tab-btn" data-tab-btn="resume">
-              <span class="tab-text title-small">Parcours</span>
+              <span class="tab-text title-large">Parcours</span>
 
               <div class="state-layer"></div>
             </button>
+<button class="tab-btn" data-tab-btn="veille">
+              <span class="tab-text title-large">Veille technologique</span>
 
+              <div class="state-layer"></div>
+            </button>
             <button class="tab-btn" data-tab-btn="contact">
-              <span class="tab-text title-small">Contact</span>
+              <span class="tab-text title-large">Contact</span>
 
               <div class="state-layer"></div>
             </button>
@@ -205,204 +231,246 @@
             <div class="container">
 
               <div class="project-list">
-
-                <div class="card">
-
+                 
+                <div class="card"  >
+                 
+                <label  for="modal-btn-glpi" class="modal-btn">
+                <div style="cursor: pointer;" >
                   <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-1.png" alt="Pixstock - Stock Media App" width="334" height="180"
+                    <img src="./assets/images/glpi.png" alt="Pixstock - Stock Media App" width="334" height="180"
                       class="img-cover">
                   </figure>
 
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Pixstock - Stock Media App</h3>
+                  <div class="card-content"> 
+                   
+                    <span class="label-large card-subtitle">Application Web</span>
+                    <h3 class="title-large card-title">GLPI</h3>
+                  </div></label>
                   </div>
+                  
+                  <input class="modal-btn" type="checkbox" id="modal-btn-glpi" name="modal-btn-glpi"/>
+                  
+                 
+                  <div class="modal">		
+                  <div class="modal-wrap" >	
+                  <div class="disposition">
+                   <p > <span class="mot-debut">GLPI</span>(acronyme de gestionnaire libre de parc informatique) est un logiciel libre de gestion des services informatiques (ITSM) et de gestion des services d’assistance(issue tracking system et ServiceDesk). Cette solution libre est éditée en PHP et distribuée sous licence GPL. <br><br>
 
-                  <a href="#" class="state-layer"></a>
-
+                    En tant que technologie libre, toute personne peut exécuter, modifier ou développer le code qui est libre. De ce fait, les contributeurs peuvent participer à l’évolution du logiciel en soumettant des modules supplémentaires libre et open source, sur github. <br><br>
+                    
+                    GLPI est une application web qui aide les entreprises à gérer leur système d’information. Parmi ses caractéristiques, cette solution est capable de construire un inventaire de toutes les ressources de la société et de réaliser la gestion des tâches administratives et financières. Les fonctionnalités de cette solution aident les Administrateurs IT à créer une base de données regroupant des ressources techniques et de gestion, ainsi qu’un historique des actions de maintenance. La fonctionnalité de gestion d’assistance ou helpdesk fournit aux utilisateurs un service leur permettant de signaler des incidents ou de créer des demandes basées sur un actif ou non, ceci par la création d’un ticket d’assistance qui est géré par un technicien .
+                    <br><br>
+                    Les Fonctionnalités de GLPI :
+                    Inventaire des ordinateurs, périphériques, réseau, imprimantes et consommables associés. Notamment grâce à un interfaçage avec OCS Inventory NG
+                    <br><br>
+                    Gestion des licences (acquises, à acquérir, sites, oem..) et des dates d’expiration.
+                    Affectation du matériel par zone géographique (salle, étage…), par groupes d’utilisateurs et par utilisateurs.
+                    Gestion des informations commerciales et financières (achat, garantie et extension, amortissement).
+                    Gestion des états de matériel.
+                    Gestion des demandes d’intervention pour tous les types de matériel de l’inventaire (helpdesk).
+                    Gestion du planning et export au format Ical pour Assistant personnel
+                    Interface pour permettre à l’utilisateur final de déposer une demande d’intervention.
+                    Gestion des entreprises, contrats, documents liés aux éléments d’inventaires…
+                    Gestion des réservations de matériel
+                    Gestion d’un système de base de connaissances hiérarchique (FAQ) , gestion d’une FAQ publique.
+                    Génération de rapports sur le matériel, de rapports réseau, de rapports sur les interventions.
+                    Télédéploiement, avec l’utilisation conjointe d’OCS Inventory NG
+                    Interface paramétrable
+                    Ajout aisé de fonctionnalité grâce à un système de plugins
+                    Communication avec des annuaires existants
+                    Les avantages de GLPI :
+                    Utiliser GLPI / OCS Inventory en entreprise présente de nombreux avantages :
+                    <br><br>
+                    Réduction des coûts <br>
+                    Optimisation des ressources <br>
+                    Gestion rigoureuse des licences <br>
+                    Démarche qualité <br>
+                    Satisfaction utilisateur <br>
+                    Sécurité
+                    </p>
+                   <a href="https://forum.bricksbuilder.io/t/how-to-instagram-feed-without-plugins/1168/11">fff</a>
+                           </div>   
+                  </div>	
+                 
                 </div>
-
-                <div class="card">
-
+               
+               
+                
+                  
+                		          		
+                </div>	
+                <div class="card"  >
+                 
+                <label  for="modal-btn-rappeltout" class="modal-btn">
+                <div style="cursor: pointer;" >
                   <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-2.png" alt="Cook.io - Recipe App" width="334" height="180"
+                    <img src="./assets/images/rappeltout.png" alt="Pixstock - Stock Media App" width="334" height="180"
                       class="img-cover">
                   </figure>
 
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Cook.io - Recipe App</h3>
+                  <div class="card-content"> 
+                   
+                    <span class="label-large card-subtitle">Application Web</span>
+                  <h3 class="title-large card-title">RappelTout</h3></label>
                   </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-3.png" alt="GitFinder - Github User Finder" width="334"
-                      height="180" class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">GitFinder - Github User Finder</h3>
                   </div>
+                  
+                  <input class="modal-btn" type="checkbox" id="modal-btn-rappeltout"  name="modal-btn-rappeltout"/>
+                  <div class="btn-card"></div>
+                  <div class="modal">	
+                    
+                  <div class="modal-wrap" >	
+                  <div class="disposition">
+                    <main class="body-large img-main">
+                        <div class="display">
+                          <h2 style="font-size: 2em;">RappelTout</h2>
+                          <div class="item_icon">
+                          <ul class="resume-bottom-list">
 
-                  <a href="#" class="state-layer"></a>
+                            <li class="resume-bottom-item">
+                              <img src="./assets/images/html5.svg" width="28" height="28" loading="lazy" alt="HTML5" class="icon">
+            
+                              <span class="label-large">HTML5</span>
+                            </li>
+            
+                            <li class="resume-bottom-item">
+                              <img src="./assets/images/css3.svg" width="28" height="28" loading="lazy" alt="CSS3" class="icon">
+            
+                              <span class="label-large">CSS3</span>
+                            </li>
+            
+            
+                            <li class="resume-bottom-item">
+                              <img src="./assets/images/pngegg.png" width="28" height="28" loading="lazy" alt="MySQL"
+                                class="icon">
+            
+                              <span class="label-large">MySQL</span>
+                            </li>
+            
+                           
+            
+                            <li class="resume-bottom-item">
+                              <img src="./assets/images/PHP-logo.svg" width="30" height="30" loading="lazy" alt="php"
+                                class="icon">
+            
+                              <span class="label-large">php</span>
+                            </li>
+            
+                            
+            
+                          </ul></div>
+                        </div>
+                        
+                        <br><br>
+                        <p class="body-large"></p>
+                        <img src="./assets/images/rplto1.png">
+                            <img src="./assets/images/rplto2.png">
+                        
+                        <p class="body-large"> <em>RappelTout</em> est une application web permettant de gérer la date de fin de validation des matériels sur la cité scolaire Jamot-Jaurès.</p> 
+                        
+                        <p><h3>Étapes Clés :</h3>
+                          <ul>
+                              <li>Création du schéma des données et mise en place de la base de données.</li>
+                              <li>Développement des classes pour gérer les opérations de base (ajout, lecture, modification, suppression).</li>
+                              <li>Conception d'une page de connexion pour les utilisateurs autorisés.</li>
+                              <li>Centralisation de la gestion des documents et des matériels par le modérateur.</li>
+                              <li>Utilisation de PHPMailer pour l'envoi automatique des mails avec une tâche planifiée.</li>
+                              
+                          </ul></p>
 
+                          <div class="details">
+                            <a href=""><div class="depot">Dépôt GitHub <img src="./assets/images/githubWhite.png" alt=""></div></a>
+                            <a href=""><div class="doc">Cahier des charges <img src="./assets/images/documentWhite.png" alt=""></div></a>
+                          </div>
+                     
+                      
+                      
+                      
+                      
+                        
+                      
+                       
+                    </main>  
+                 
+                           </div>   
+                  </div>	
+                 
                 </div>
+               
+                
+                  
+                		          		
+                </div>	
 
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-4.png" alt="Weatherio - Live Weather App" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Weatherio - Live Weather App</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-5.png" alt="Tvflix - Netflix Clone 2.0" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Tvflix - Netflix Clone 2.0</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-6.png" alt="Travelia - Travel Website" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Website</span>
-
-                    <h3 class="title-large card-title">Travelia - Travel Website</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-              </div>
-
+                
             </div>
           </section>
           <section class="section tab-content " data-tab-content="veille">
             <div class="container">
-
-              <div class="project-list">
-
+              <div class="body-place">
                
+                  <h2 class="title-large">QU’EST-CE QUE LA VEILLE TECHNOLOGIQUE ?</h2> <br>
+                  <p class="body-large"> La veille technologique est une activité qui consiste à se tenir au courant des dernières avancées technologiques dans un domaine. <br>
 
-                <div class="card" >
+                  La veille technologique dans le domaine de l’informatique est utilisée principalement pour : <br><br> 
+                  
+                          - Suivre les évolutions techniques, <br>
+                         - Dégager de nouveaux procédés,<br>
+                          - Identifier les meilleures pratiques. <br><br> </p>
+                  <br>
+                          <h2 class="title-large">MES PRINCIPAUX OUTILS DE VEILLE TECHNOLOGIQUE </h2> <br>
 
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-2.png" alt="Cook.io - Recipe App" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content" >
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Cook.io - Recipe App</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-3.png" alt="GitFinder - Github User Finder" width="334"
-                      height="180" class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">GitFinder - Github User Finder</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-4.png" alt="Weatherio - Live Weather App" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Weatherio - Live Weather App</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-5.png" alt="Tvflix - Netflix Clone 2.0" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Web App</span>
-
-                    <h3 class="title-large card-title">Tvflix - Netflix Clone 2.0</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
-
-                <div class="card">
-
-                  <figure class="card-banner img-holder" style="--width: 334; --height: 180;">
-                    <img src="./assets/images/project-6.png" alt="Travelia - Travel Website" width="334" height="180"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="card-content">
-                    <span class="label-large card-subtitle">Website</span>
-
-                    <h3 class="title-large card-title">Travelia - Travel Website</h3>
-                  </div>
-
-                  <a href="#" class="state-layer"></a>
-
-                </div>
+                          <p class="body-large">
+                            Pour enrichir mes connaissances dans le domaine de l'informatique, je m'efforce de maintenir une veille technologique active. Pour ce faire, je consulte quelques newsletters de divers sites spécialisés dans ce domaine, je suis aussi quelques comptes sur les réseaux sociaux qui partagent du contenu professionnel en informatique, et j'utilise également un agrégateur de flux RSS. Par ailleurs, je suis membre d'un réseau professionnel dédié à ce secteur, ce qui me permet de rester au fait des dernières avancées et tendances :
+                        </p>
+                        <br><br>
+                        <div class="newsletter">
+                            <p class="body-large">
+                                - La newsletter des professionnels en informatique de Developpez.com
+                            </p>
+                            <a href="https://www.journaldugeek.com" target="_blank">
+                                <img src="./assets/images/journaldugeek.jpg" alt="">
+                            </a>
+                        </div>
+                        <br><br>
+                        <?php
+                        include 'rss-1.php';
+                        ?>
+                        <br><br>
+                        <div class="newsletter">
+                            <p class="body-large">
+                                - La newsletter des professionnels en informatique de Developpez.com </p>
+                                <a href="https://www.developpez.com" target="_blank">
+                                    <img src="./assets/images/logo-dvp_news.png" alt="">
+                                </a>
+                           
+                        </div>
+                        <br><br>
+                        <?php
+                        include 'rss-2.php';
+                        ?>
+                        
+                        <br><br>
+                        
+                            <p class="body-large">
+                                - L'agrégateur de flux RSS Feedly & le réseau professionnel daily.dev pour les développeurs qui fournit les dernières nouvelles et articles technologiques en un seul endroit :
+                                <div class="newsletter-b">
+                                  <a href="https://feedly.com/" target="_blank">
+                                    <img src="./assets/images/feedly_logo_icon_169177.png" alt="Feedly">
+                                </a>
+                                <a href="https://app.daily.dev/onboarding?utm_source=landing&utm_medium=cta&utm_campaign=landing_conversions" target="_blank">
+                                    <img src="./assets/images/dailyDev.png" alt="daily.dev">
+                                </a>
+                                </div>
+                                
+                            </p>
+                       
+              </div>
+      
+              <!-- <div class="card" style="margin-bottom: 20px;"><div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/SyamXfBVjrM?si=9K1IaK_45_U8mKHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>-->
+              <div class="project-list"> 
+              
+               
 
               </div>
 
@@ -420,19 +488,23 @@
           <section class="section tab-content resume-tab" data-tab-content="resume">
             <div class="container">
 
-              <h2 class="section-title title-small">Experience</h2>
+              <h2 class="section-title title-large">Mes expériences Professionnelles</h2>
 
               <ul class="list">
 
                 <li class="resume-item">
                   <div class="resume-card">
 
-                    <p class="body-large">Software Engineer, TechGulf Solutions</p>
+                    <p class="body-large">Hôte de caisse, Intermarché</p>
 
-                    <span class="label-medium card-subtitle">2018 - Present</span>
+                    <span class="label-large card-subtitle">25 Octobre 2023 - Present</span>
 
-                    <span class="body-medium card-text">Led the development of a customer management system, resulting
-                      in improved efficiency and streamlined processes.</span>
+                    <span class="body-large card-text"> - Accueillir les clients 
+                      - Les encaisser <br>
+                      - Leur annoncer le prix final <br>
+                      - Compter sa caisse ou remplacer son (sa) collègue <br>
+                      - Participer au travail en rayons pendant les heures creuses.
+                      </span>
 
                   </div>
                 </li>
@@ -440,12 +512,48 @@
                 <li class="resume-item">
                   <div class="resume-card">
 
-                    <p class="body-large">Software Developer Intern, ByteOasis Corporation</p>
+                    <p class="body-large">Equipier polyvalent, Carrefour</p>
 
-                    <span class="label-medium card-subtitle">2016 - 2017</span>
+                    <span class="label-large card-subtitle">27 Mai - 2 Août 2023</span>
 
-                    <span class="body-medium card-text">
-                      Assisted in the development and testing of a mobile application for internal use.
+                    <span class="body-large card-text">
+                      - Mise en rayon <br>
+                      - Accueil Clients <br>
+                      - Passage de commande  <br>
+                      - Nettoyage <br>
+                      - La plonge
+                    </span>
+
+                  </div>
+                </li>
+                <li class="resume-item">
+                  <div class="resume-card">
+
+                    <p class="body-large">Stagiaire, Horizon Jeune - Foyer de Jeunes Travailleurs</p>
+
+                    <span class="title-large card-subtitle">Création d’un site web</span>
+                    <span class="label-large card-subtitle">27 Mai - 2 Août 2023</span>
+
+                    <span class="body-large card-text">
+                      - Présenter clairement la mission, les activités et les valeurs d'Horizon Jeune. <br>
+                      - Informer sur les services d'hébergement, le chantier d'insertion, les formations et les ateliers proposés. <br>
+                      - Faciliter l'accès aux informations pratiques pour les résidents, les partenaires et les bénéficiaires. 
+                    </span>
+
+                  </div>
+                </li>
+                <li class="resume-item">
+                  <div class="resume-card">
+
+                    <p class="body-large">Stagiaire, ML Industrie</p>
+
+                    <span class="title-large card-subtitle">Reférencement de site web (SEO)</span>
+                    <span class="label-large card-subtitle">30 Mai - 8 juillet 2023</span>
+
+                    <span class="body-large card-text">
+                      - Analyse de Mots-clés et Recherche de Niche : recherche de mots-clés pertinents pour le secteur d'activité du site <br>
+                      - Optimisation On-Page : audit SEO du site, optimiser les balises HTML, ... <br>
+                      - Suivi et Analyse des Performances : Google Analytics, Google Search Console
                     </span>
 
                   </div>
@@ -453,18 +561,37 @@
 
               </ul>
 
-              <h2 class="section-title title-small">Education</h2>
+              <h2 class="section-title title-large">Mon Parcours Scolaire</h2>
 
               <ul class="list">
 
                 <li class="resume-item">
                   <div class="resume-card">
-
+                    
                     <p class="body-large">
-                      Certification in Web Development with React.js (FreeCodeCamp Certification)
+                      BTS Services Informatiques et aux Organisations,
+                      <ul>
+                        Lycée Professionnel Jean Jaurès 
+                      </ul>
                     </p>
+                    <span class="label-medium">Aubusson (23200)</span>
 
-                    <span class="label-medium card-subtitle">2015 - 2016</span>
+                    <span class="label-large card-subtitle">2022 - Présent</span>
+
+                  </div>
+                </li>
+
+                <li class="resume-item">
+                  <div class="resume-card">
+                   
+                    <p class="body-large">
+                      Génie Electrique et Informatique Industrielle,
+                      <ul>
+                        IUT de l'Aisne
+                      </ul>
+                    </p>
+                    <span class="label-medium">Cuffies (02880)</span>
+                    <span class="label-large card-subtitle">2021 - 2022</span>
 
                   </div>
                 </li>
@@ -473,88 +600,216 @@
                   <div class="resume-card">
 
                     <p class="body-large">
-                      Relevant Coursework: Data Structures, Algorithms, Database Management
+                      Génie Logiciel
+                      <ul>
+                        Haute Ecole de Management et de l'Ingenieurie la Percée - HEMIP
+                      </ul>
                     </p>
-
-                    <span class="label-medium card-subtitle">2014 - 2013</span>
-
-                  </div>
-                </li>
-
-                <li class="resume-item">
-                  <div class="resume-card">
-
-                    <p class="body-large">
-                      Bachelor of Science in Computer Science, Alexandria University
-                    </p>
-
-                    <span class="label-medium card-subtitle">2010 - 2014</span>
+                    <span class="label-medium">Pointe-Noire (CONGO)</span>
+                    <span class="label-large card-subtitle">2019-2021</span>
 
                   </div>
                 </li>
 
               </ul>
 
-              <h2 class="section-title title-small">Skills and Technologies</h2>
+              <h2 class="section-title title-large">Compétences et Technologies</h2>
 
               <ul class="resume-bottom-list">
 
                 <li class="resume-bottom-item">
                   <img src="./assets/images/html5.svg" width="28" height="28" loading="lazy" alt="HTML5" class="icon">
 
-                  <span class="label-medium">HTML5</span>
+                  <span class="label-large">HTML5</span>
                 </li>
 
                 <li class="resume-bottom-item">
                   <img src="./assets/images/css3.svg" width="28" height="28" loading="lazy" alt="CSS3" class="icon">
 
-                  <span class="label-medium">CSS3</span>
+                  <span class="label-large">CSS3</span>
                 </li>
 
                 <li class="resume-bottom-item">
-                  <img src="./assets/images/javascript.svg" width="28" height="28" loading="lazy" alt="JavaScript"
+                  <img src="./assets/images/js.png" width="28" height="28" loading="lazy" alt="JavaScript"
                     class="icon">
 
-                  <span class="label-medium">JavaScript</span>
+                  <span class="label-large">JavaScript</span>
                 </li>
 
                 <li class="resume-bottom-item">
-                  <img src="./assets/images/react.js.svg" width="28" height="28" loading="lazy" alt="React.js"
+                  <img src="./assets/images/bootstrap-5-logo-icon.svg" width="28" height="28" loading="lazy" alt="bootstrap"
                     class="icon">
 
-                  <span class="label-medium">React.js</span>
+                  <span class="label-large">Bootstrap</span>
                 </li>
 
                 <li class="resume-bottom-item">
-                  <img src="./assets/images/node.js.svg" width="28" height="28" loading="lazy" alt="Node.js"
+                  <img src="./assets/images/pngegg.png" width="28" height="28" loading="lazy" alt="MySQL"
                     class="icon">
 
-                  <span class="label-medium">Node.js</span>
+                  <span class="label-large">MySQL</span>
                 </li>
 
                 <li class="resume-bottom-item">
                   <img src="./assets/images/github.svg" width="28" height="28" loading="lazy" alt="GitHub" class="icon">
 
-                  <span class="label-medium">GitHub</span>
+                  <span class="label-large">GitHub</span>
                 </li>
 
                 <li class="resume-bottom-item">
-                  <img src="./assets/images/mongoDB.svg" width="28" height="28" loading="lazy" alt="MongoDB"
+                  <img src="./assets/images/PHP-logo.svg" width="30" height="30" loading="lazy" alt="php"
                     class="icon">
 
-                  <span class="label-medium">MongoDB</span>
+                  <span class="label-large">php</span>
                 </li>
 
                 <li class="resume-bottom-item">
                   <img src="./assets/images/VS_code.svg" width="28" height="28" loading="lazy" alt="VS Code"
                     class="icon">
 
-                  <span class="label-medium">VS Code</span>
+                  <span class="label-large">VS Code</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/c-sharp-programming-language-icon.svg" width="28" height="28" loading="lazy" alt="C-Sharp"
+                    class="icon">
+
+                  <span class="label-large">C-Sharp</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/python-programming-language-icon.svg" width="28" height="28" loading="lazy" alt="Python"
+                    class="icon">
+
+                  <span class="label-large">Python</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/adobe-photoshop-icon.svg" width="28" height="28" loading="lazy" alt="Photoshop"
+                    class="icon">
+
+                  <span class="label-large">Photoshop</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/unity-game-engine-icon.svg" width="28" height="28" loading="lazy" alt="Unity 3D"
+                    class="icon">
+
+                  <span class="label-large">Unity 3D</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/figma-icon.svg" width="28" height="28" loading="lazy" alt="Figma"
+                    class="icon">
+
+                  <span class="label-large">Figma</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/flutter-icon.svg" width="28" height="28" loading="lazy" alt="Flutter"
+                    class="icon">
+
+                  <span class="label-large">Flutter</span>
+                </li>
+                <li class="resume-bottom-item">
+                  <img src="./assets/images/google-firebase-icon.svg" width="28" height="28" loading="lazy" alt="Firebase"
+                    class="icon">
+
+                  <span class="label-large">Firebase</span>
                 </li>
 
               </ul>
+              <br><br>
+              <h2 class="section-title title-large">Certification</h2>
+
+              <ul class="resume-bottom-list1">
+                <div >
+
+                
+               <label  for="modal-btn-PIX" class="modal-btn"> 
+                <li class="resume-bottom-item" id="item1"> 
+                  
+                  
+                    <img src="./assets/images/640px-Pix_logo.svg.png" width="28" height="28" loading="lazy" alt="Pix" class="icon">
+                    <span class="label-large">Pix</span>
+                  
+                </li></label></div>
+              
+                <div>
+                <label  for="modal-btn-unity" class="modal-btn"> 
+                <li class="resume-bottom-item" id="item2">
+                  
+                    <img src="./assets/images/unity-game-engine-icon.svg" width="28" height="28" loading="lazy" alt="Unity 3D"
+                    class="icon">
+
+                  <span class="label-large">Unity 3D</span>
+                  
+                </li></label></div>
+
+                <div>
+                <label  for="modal-btn-rootme" class="modal-btn"> 
+                <li class="resume-bottom-item" id="item2">
+                  
+                    <img src="./assets/images/root-me-pro.png" width="28" height="28" loading="lazy" alt="Root me"
+                    class="icon">
+
+                  <span class="label-large">Root me</span>
+                  
+                </li></label></div>
+              
+          
+              </ul>
+              
+              
+            
+            
+               
 
             </div>
+            <div class="mod">
+            <input class="modal-btn" type="checkbox" id="modal-btn-PIX" name="modal-btn-PIX"/>
+                  
+              <label for="modal-btn-PIX" class="modal-close"></label>
+                  <div class="modal">	
+                  <div class="modal-wrap" >	
+                    	
+                  
+                    <iframe width="100%" class="responsive-iframe"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="yes"
+                    allowTransparency="true" src="./assets/docs/attestation-pix-20231221.pdf" title="Iframe Example" scrolling="no" frameborder="no" allow="fullscreen"></iframe>  
+                  
+                 
+                </div></div></div>
+            <div class="mod">
+            <input class="modal-btn" type="checkbox" id="modal-btn-unity" name="modal-btn-unity"/>
+                  
+              <label for="modal-btn-unity" class="modal-close"></label>
+                  <div class="modal">	
+                  <div class="modal-wrap" >	
+                    	
+                  
+                    <iframe width="100%" class="responsive-iframe"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="yes"
+                    allowTransparency="true" src="./assets/docs/certificat_martial_mayamou_batetana.pdf" title="Iframe Example" scrolling="no" frameborder="no" allow="fullscreen"></iframe>  
+                  
+                 
+                </div></div>
+              </div>
+            <div class="mod">
+            <input class="modal-btn" type="checkbox" id="modal-btn-rootme" name="modal-btn-rootme"/>
+                  
+              <label for="modal-btn-rootme" class="modal-close"></label>
+                  <div class="modal">	
+                  <div class="modal-wrap" >	
+                    	
+                  
+                    <iframe width="100%" class="responsive-iframe"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="yes"
+                    allowTransparency="true" src="./assets/docs/certa-pro-root-me-org-martial-2024-05-29-16_41_37.pdf" title="Iframe Example" scrolling="no" frameborder="no" allow="fullscreen"></iframe>  
+                  
+                 
+                </div></div>
+              </div>
           </section>
 
 
@@ -575,12 +830,11 @@
 
                 <div class="social-list">
 
-                  <a href="#" class="social-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M0.473114 19.5949C2.71038 21.0092 5.30432 21.7567 7.95111 21.7499C11.8611 21.7499 15.4441 20.2479 18.0411 17.5209C20.5261 14.9109 21.8931 11.4039 21.8251 7.84489C22.7671 7.03889 23.8751 5.49989 23.8751 3.99989C23.8752 3.86772 23.8403 3.73787 23.7741 3.6235C23.7078 3.50914 23.6125 3.41431 23.4978 3.34864C23.3831 3.28296 23.253 3.24876 23.1209 3.24951C22.9887 3.25026 22.8591 3.28592 22.7451 3.35289C21.8601 3.87289 21.0531 4.00889 20.2231 3.77589C18.5281 2.12389 16.0051 1.77589 13.8791 2.92189C12.0211 3.92189 10.9881 5.75189 11.0811 7.75189C7.93042 7.36754 5.04621 5.79215 3.02011 3.34889C2.94318 3.2558 2.8449 3.18267 2.73363 3.13571C2.62237 3.08875 2.50141 3.06936 2.38104 3.07917C2.26067 3.08899 2.14445 3.12773 2.04226 3.1921C1.94008 3.25647 1.85495 3.34456 1.79411 3.44889C0.820114 5.11689 0.830114 7.04989 1.67711 8.61089C1.49365 8.6414 1.32712 8.73647 1.20757 8.87894C1.08802 9.02141 1.02331 9.20191 1.02511 9.38789C1.02767 10.147 1.19358 10.8967 1.51159 11.5861C1.8296 12.2754 2.29225 12.8882 2.86811 13.3829C2.7659 13.481 2.69361 13.6061 2.65963 13.7436C2.62564 13.8811 2.63136 14.0255 2.67611 14.1599C2.92094 14.8903 3.31964 15.5596 3.84529 16.1227C4.37094 16.6857 5.0113 17.1295 5.72311 17.4239C4.24373 18.1297 2.59555 18.4049 0.967114 18.2179C0.183114 18.1119 -0.203886 19.1659 0.473114 19.5949ZM8.15611 17.6809C8.71711 17.2499 8.41912 16.3519 7.71511 16.3369C7.11476 16.3242 6.5254 16.1734 5.99268 15.8963C5.45995 15.6192 4.99818 15.2232 4.64311 14.7389C4.989 14.7179 5.33198 14.663 5.66711 14.5749C6.42811 14.3689 6.39211 13.2709 5.61911 13.1159C4.94279 12.9805 4.31525 12.6659 3.80211 12.205C3.28896 11.7441 2.90906 11.1539 2.70211 10.4959C3.07911 10.5889 3.46311 10.6409 3.84611 10.6479C4.60511 10.6519 4.89211 9.67889 4.27311 9.27189C2.87811 8.35289 2.28311 6.72989 2.67711 5.20389C5.13146 7.68603 8.42756 9.15727 11.9141 9.32689C12.0298 9.33266 12.1453 9.3115 12.2515 9.26508C12.3577 9.21866 12.4516 9.14824 12.5259 9.05937C12.6003 8.97049 12.653 8.86558 12.6799 8.75288C12.7068 8.64018 12.7072 8.52277 12.6811 8.40989C12.2061 6.35089 13.3561 4.90789 14.5911 4.24289C15.8131 3.58289 17.7751 3.37689 19.2791 4.95489C19.7261 5.42589 21.2341 5.44389 22.0011 5.26489C21.6571 5.91289 21.1281 6.52789 20.6331 6.87389C20.5293 6.9466 20.4455 7.04444 20.3897 7.15829C20.3339 7.27213 20.3079 7.39826 20.3141 7.52489C20.4751 10.8099 19.2511 14.0759 16.9561 16.4849C14.6441 18.9119 11.4471 20.2489 7.95211 20.2489C6.56211 20.2489 5.19911 20.0229 3.91111 19.5869C5.45111 19.2889 6.91411 18.6369 8.15611 17.6809Z"
-                        style="fill: var(--on-surface-variant)" />
-                    </svg>
+                 
+                  <a href="https://www.linkedin.com/in/martial-m-b01641228/" target="_blank" class="social-item">
+                    
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="1.5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.528"> <path d="M22 3.47059V20.5294C22 20.9194 21.845 21.2935 21.5692 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47056C3.08053 22 2.70648 21.8451 2.43069 21.5693C2.15491 21.2935 1.99997 20.9194 1.99997 20.5294V3.47059C1.99997 3.08056 2.15491 2.70651 2.43069 2.43073C2.70648 2.15494 3.08053 2 3.47056 2H20.5294C20.9194 2 21.2935 2.15494 21.5692 2.43073C21.845 2.70651 22 3.08056 22 3.47059V3.47059ZM7.88232 9.64706H4.94115V19.0588H7.88232V9.64706ZM8.14703 6.41176C8.14858 6.18929 8.10629 5.96869 8.02258 5.76255C7.93888 5.55642 7.81539 5.36879 7.65916 5.21039C7.50294 5.05198 7.31705 4.92589 7.1121 4.83933C6.90715 4.75277 6.68715 4.70742 6.46468 4.70588H6.41173C5.95931 4.70588 5.52541 4.88561 5.20549 5.20552C4.88558 5.52544 4.70585 5.95934 4.70585 6.41176C4.70585 6.86419 4.88558 7.29809 5.20549 7.61801C5.52541 7.93792 5.95931 8.11765 6.41173 8.11765V8.11765C6.63423 8.12312 6.85562 8.0847 7.06325 8.00458C7.27089 7.92447 7.46071 7.80422 7.62186 7.65072C7.78301 7.49722 7.91234 7.31346 8.00245 7.10996C8.09256 6.90646 8.14169 6.6872 8.14703 6.46471V6.41176ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7798 9.77345C13.2576 10.0397 12.8142 10.4383 12.4941 10.9294H12.4117V9.64706H9.64703V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.368 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z" ></path> </g><g id="SVGRepo_iconCarrier"> <path d="M22 3.47059V20.5294C22 20.9194 21.845 21.2935 21.5692 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47056C3.08053 22 2.70648 21.8451 2.43069 21.5693C2.15491 21.2935 1.99997 20.9194 1.99997 20.5294V3.47059C1.99997 3.08056 2.15491 2.70651 2.43069 2.43073C2.70648 2.15494 3.08053 2 3.47056 2H20.5294C20.9194 2 21.2935 2.15494 21.5692 2.43073C21.845 2.70651 22 3.08056 22 3.47059V3.47059ZM7.88232 9.64706H4.94115V19.0588H7.88232V9.64706ZM8.14703 6.41176C8.14858 6.18929 8.10629 5.96869 8.02258 5.76255C7.93888 5.55642 7.81539 5.36879 7.65916 5.21039C7.50294 5.05198 7.31705 4.92589 7.1121 4.83933C6.90715 4.75277 6.68715 4.70742 6.46468 4.70588H6.41173C5.95931 4.70588 5.52541 4.88561 5.20549 5.20552C4.88558 5.52544 4.70585 5.95934 4.70585 6.41176C4.70585 6.86419 4.88558 7.29809 5.20549 7.61801C5.52541 7.93792 5.95931 8.11765 6.41173 8.11765V8.11765C6.63423 8.12312 6.85562 8.0847 7.06325 8.00458C7.27089 7.92447 7.46071 7.80422 7.62186 7.65072C7.78301 7.49722 7.91234 7.31346 8.00245 7.10996C8.09256 6.90646 8.14169 6.6872 8.14703 6.46471V6.41176ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7798 9.77345C13.2576 10.0397 12.8142 10.4383 12.4941 10.9294H12.4117V9.64706H9.64703V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.368 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z"  style="stroke: var(--on-surface-variant)"></path> </g></svg>
+                    
 
                   </a>
 
@@ -600,40 +854,14 @@
 
                   </a>
 
-                  <a href="#" class="social-item">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_66_1657)">
-                        <mask id="mask0_66_1657" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
-                          width="24" height="24">
-                          <path d="M0 7.05719e-05H23.9999V24H0V7.05719e-05Z" fill="white" />
-                        </mask>
-                        <g mask="url(#mask0_66_1657)">
-                          <path
-                            d="M23.062 12C23.0596 12.9866 23.0485 13.9731 23.035 14.9596C23.0187 16.1498 23.0003 17.3405 22.7018 18.5103C22.3888 19.7371 21.7715 20.795 20.811 21.5783C19.7989 22.4036 18.5755 22.8375 17.2552 22.9178C15.5039 23.0243 13.7519 23.0664 12 23.0622C10.248 23.0664 8.496 23.0243 6.7448 22.9178C5.42443 22.8375 4.20109 22.4036 3.18897 21.5783C2.2285 20.795 1.61116 19.7371 1.29813 18.5103C0.999629 17.3405 0.981255 16.1498 0.964989 14.9596C0.951489 13.9731 0.940285 12.9866 0.937988 12C0.940285 11.0135 0.951489 10.0269 0.964989 9.04045C0.981255 7.85025 0.999629 6.65954 1.29813 5.48973C1.61116 4.26301 2.2285 3.20505 3.18897 2.42182C4.20109 1.59644 5.42443 1.16262 6.7448 1.08232C8.496 0.97582 10.248 0.933726 12 0.937851C13.7519 0.933726 15.5039 0.97582 17.2552 1.08232C18.5755 1.16262 19.7989 1.59644 20.811 2.42182C21.7715 3.20505 22.3888 4.26301 22.7018 5.48973C23.0003 6.65954 23.0187 7.85025 23.035 9.04045C23.0485 10.0269 23.0596 11.0135 23.062 12Z"
-                            style="stroke: var(--on-surface-variant)" stroke-width="1.5" stroke-miterlimit="10" />
-                          <path
-                            d="M16.875 12C16.875 14.7183 14.6714 16.9219 11.9531 16.9219C9.23484 16.9219 7.03125 14.7183 7.03125 12C7.03125 9.28174 9.23484 7.07815 11.9531 7.07815C14.6714 7.07815 16.875 9.28174 16.875 12Z"
-                            style="stroke: var(--on-surface-variant)" stroke-width="1.5" stroke-miterlimit="10" />
-                          <path
-                            d="M19.875 5.67188C19.875 6.4485 19.2454 7.07812 18.4687 7.07812C17.6921 7.07812 17.0625 6.4485 17.0625 5.67188C17.0625 4.89526 17.6921 4.26563 18.4687 4.26563C19.2454 4.26563 19.875 4.89526 19.875 5.67188Z"
-                            style="fill: var(--on-surface-variant)" />
-                        </g>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_66_1657">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-
+                  
                 </div>
 
               </div>
 
               <div class="contact-form">
 
-                <h3 class="title-large">Contactez moi :</h3>
+                <h3 class="title-large">Contactez-moi :</h3>
 
                 <form action="" method="post" class="input-wrapper">
 
@@ -676,7 +904,8 @@
   <footer class="footer">
     <div class="container">
 
-      <p class="body-medium">Copyright 2023. All right reserved by codewithsadee</p>
+      <p class="body-medium">Copyright 2024. Designed by martial_may</p>
+      <p class="body-medium">Tous droits réservés</p>
 
     </div>
   </footer>
@@ -689,7 +918,9 @@
     - custom js link
   -->
   <script src="./js/script.js"></script>
-  <script src="./js/blopGradient.js"></script>
+  <script src="./js/feed.js"></script>
+  
+  
 
 </body>
 
